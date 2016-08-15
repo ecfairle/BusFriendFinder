@@ -3,6 +3,7 @@
   "authors": [
     "Eugene Fairley <ecfairley@ucdavis.edu>"
   ],
+  "directory": "./app/static/bower_components",
   "description": "Muni Predictions",
   "main": "",
   "license": "MIT",
@@ -16,6 +17,10 @@
   ],
   "dependencies": {
     "react": "^15.3.0",
+    "bootstrap": "^3.3.7",
+    "bootstrap-material-design": "^4.0.2"
+  },
+  "resolutions": {
     "bootstrap": "^3.3.7"
   }
 }

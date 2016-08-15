@@ -16,5 +16,3 @@ def index():
     stops_json = [json.dumps(s,default=lambda o: o.__dict__) for s in stops]
     print(stops_json)
     return render_template('index.html', stops=stops[:10],stops_json=stops_json)
-
-

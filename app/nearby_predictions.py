@@ -2,7 +2,7 @@ import stop_locater
 import xml_reader
 from .models import Stop
 
-def get_predictions(location,n_stops=20):
+def get_predictions(location,n_stops=30):
 	stops = stop_locater.closest_stops(location,n_stops)
 	url = xml_reader.multi_predictions_url(stops)
 	pred_dict = xml_reader.read_xml(url)
