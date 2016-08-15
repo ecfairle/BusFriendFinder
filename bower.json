@@ -1,0 +1,21 @@
+{
+  "name": "NextBus",
+  "authors": [
+    "Eugene Fairley <ecfairley@ucdavis.edu>"
+  ],
+  "description": "Muni Predictions",
+  "main": "",
+  "license": "MIT",
+  "homepage": "ecfairle.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.3.0",
+    "bootstrap": "^3.3.7"
+  }
+}
