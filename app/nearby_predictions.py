@@ -24,11 +24,8 @@ def set_predictions(pred_dict, stops):
 		stop = next((s for s in stops if s.tag == stop_tag and
 			s.direction.find('Outbound') == direction.find('Outbound') and s.route == route_tag), None)
 		if stop:
-			print stop.tag
 			stop.update_predictions(times_list)
 		print times_list
-
-	print '--------'
 
 
 

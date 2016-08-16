@@ -1,9 +1,9 @@
 import numpy as np
-from app import app
-from app import stop_locations,stop_list
-
+from .models import Stop
+from app import stop_list, stop_locations
 
 def closest_stops(location,n_stops):
+	print(stop_list)
 	d = ((stop_locations-location)**2).sum(axis=1)
 	ind = d.argsort()
 	return top_unique_routes(ind,n_stops)

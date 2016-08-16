@@ -6,7 +6,9 @@ var DynamicSearch = React.createClass({
   },
 
   handleChange: function(event){
-    this.setState({searchString:event.target.value});
+    this.setState({searchString: event.target.value,
+                   loading: true
+                  });
   },
 
   resetSearch: function() {
