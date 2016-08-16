@@ -22,7 +22,6 @@ def read_xml(url):
 def stop_list_url(route):
 	return '{}command=routeConfig&a={}&r={}&terse'.format(NEXTBUS_BASE_URI, AGENCY, route)
 
-
 def routes_list_url():
 	return '{}command=routeList&a={}'.format(NEXTBUS_BASE_URI, AGENCY)
 

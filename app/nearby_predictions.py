@@ -1,6 +1,6 @@
 import stop_locater
 import xml_reader
-from .models import Stop
+from app.models import Stop
 
 def get_predictions(location,n_stops=30):
 	stops = stop_locater.closest_stops(location,n_stops)
@@ -25,8 +25,6 @@ def set_predictions(pred_dict, stops):
 			s.direction.find('Outbound') == direction.find('Outbound') and s.route == route_tag), None)
 		if stop:
 			stop.update_predictions(times_list)
-		print times_list
-
 
 
 def get_times(route_group):
